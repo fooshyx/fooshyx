@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
+    <title>fooshy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@400&family=Roboto+Slab:wght@400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Welcome to my website</h1>
-    <p>This is a blank page to start with.</p>
-    
+    <header>
+        <h1>fooshy</h1>
+        <h2>software, games, etcetera</h2>
+    </header>
+
+    <main>
+        <p>Nothing to display for now - busy in the private sector</p>
+    </main>
+
+    <footer>
+        <button id="contact-btn">Contact</button>
+    </footer>
+
+    <!-- Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Contact Verification</h3>
+            <div id="verification-step">
+                <p>Enter the verification code:</p>
+                <div id="verification-code"></div>
+                <input type="text" id="verification-input" placeholder="Enter code" maxlength="8">
+                <button id="verify-btn">Submit</button>
+            </div>
+            <div id="email-reveal" style="display: none;">
+                <p>Email: <strong>michael@fooshy.au</strong></p>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
